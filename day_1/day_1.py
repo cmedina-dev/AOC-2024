@@ -1,43 +1,28 @@
-import sys
+import sys, cProfile, pstats, io
+import numpy as np
 sys.stdin = open('input.txt', 'r')
-data = sys.stdin.read().splitlines()
-
+tokens = np.fromstring(sys.stdin.read(), sep=' ', dtype=int)
+left = tokens[::2]
+right = tokens[1::2]
+left.sort()
+right.sort()
 
 def part_two():
-    left = []
-    right = []
-    for line in data:
-        l, r = line.split()
-        left.append(int(l))
-        right.append(int(r))
-
-    left.sort()
-    right.sort()
-    dist_t = 0
-
-    for i in range(len(left)):
-        left[i] *= right.count(left[i])
-        dist_t += left[i]
-
+    dist_t = np.sum(np.where(left in right, left * right.count(left), 0))
     print(dist_t)
-
-part_two()
 
 def part_one():
-    left = []
-    right = []
-    for line in data:
-        l, r = line.split()
-        left.append(l)
-        right.append(r)
-
-    left.sort()
-    right.sort()
-
-    dist_t = 0
-
-    for i in range(len(left)):
-        dist = abs(int(left[i]) - int(right[i]))
-        dist_t += dist
-
+    # Compute the sum of absolute differences
+    dist_t = np.sum(np.abs(left - right))
     print(dist_t)
+
+pr = cProfile.Profile()
+pr.enable()
+part_one()
+part_two()
+pr.disable()
+s = io.StringIO()
+sortby = pstats.SortKey.CUMULATIVE
+ps = pstats.Stats(pr, stream=s).sort_stats(sortby)
+ps.print_stats()
+print(s.getvalue())
