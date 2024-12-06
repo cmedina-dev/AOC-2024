@@ -23,18 +23,20 @@ def sim(mp, p2=False):
             # If we've traversed a node in the same direction before,
             # we are guaranteed to be in a cycle and can terminate early.
             loc = (int(pos[0]), int(pos[1]), d_ptr)
-            if loc in locs:
+            if not p2: loc = (int(pos[0]), int(pos[1]))
+            if loc in locs and p2:
                 return True
             locs.add(loc)
             pos += vec[d_ptr]
         mp[pos[0], pos[1]] = dirs[d_ptr]
-    if p2:
-        return len(set(locs))
+    if not p2:
+        print(f'Path length: {len(set(locs))}')
     else:
         return False
 
 def part_one():
-    sim(m)
+    sim(m.copy())
+part_one()
 
 def part_two():
     cycles = 0
@@ -45,12 +47,9 @@ def part_two():
             if m[i][j] == '#' or m[i][j] == '^': continue
             m_ = m.copy()
             m_[i][j] = '#'
-            is_cycle = sim(m_)
+            is_cycle = sim(m_, p2=True)
             if is_cycle:
                 cycles += 1
-                print(f'Map {map_count}: Cycle found, now at {cycles} cycles.')
-            else:
-                print(f'Map {map_count}: Edge reached.')
             map_count += 1
-    print(cycles)
+    print(f'Cycles: {cycles}')
 part_two()
