@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb6c89ac-966c-46f0-907e-d7f2e2330277" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day_7/day_7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_9/day_9.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_9/day_9.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +34,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.day_1.executor": "Run",
+    "Python.day_10.executor": "Run",
     "Python.day_2.executor": "Run",
     "Python.day_3.executor": "Run",
     "Python.day_4.executor": "Run",
     "Python.day_5.executor": "Run",
     "Python.day_6.executor": "Run",
     "Python.day_7.executor": "Run",
+    "Python.day_8.executor": "Run",
+    "Python.day_9.executor": "Run",
+    "Python.day_9_valid.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -89,7 +93,9 @@
       <workItem from="1733375337478" duration="4641000" />
       <workItem from="1733441513549" duration="5000" />
       <workItem from="1733441834549" duration="23000" />
-      <workItem from="1733465509535" duration="17815000" />
+      <workItem from="1733465509535" duration="24029000" />
+      <workItem from="1733680253710" duration="2917000" />
+      <workItem from="1733706996501" duration="55191000" />
     </task>
     <servers />
   </component>
@@ -98,11 +104,15 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/2024$day_3.coverage" NAME="day_3 Coverage Results" MODIFIED="1733203282428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_3" />
+    <SUITE FILE_PATH="coverage/2024$day_10.coverage" NAME="day_10 Coverage Results" MODIFIED="1733811348932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_10" />
+    <SUITE FILE_PATH="coverage/2024$day_9.coverage" NAME="day_9 Coverage Results" MODIFIED="1733867988886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_9" />
     <SUITE FILE_PATH="coverage/2024$day_6.coverage" NAME="day_6 Coverage Results" MODIFIED="1733505674406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_6" />
+    <SUITE FILE_PATH="coverage/2024$day_8.coverage" NAME="day_8 Coverage Results" MODIFIED="1733712532691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_8" />
     <SUITE FILE_PATH="coverage/2024$day_1.coverage" NAME="day_1 Coverage Results" MODIFIED="1733085670553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_1" />
     <SUITE FILE_PATH="coverage/2024$day_2.coverage" NAME="day_2 Coverage Results" MODIFIED="1733148932637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_2" />
-    <SUITE FILE_PATH="coverage/2024$day_7.coverage" NAME="day_7 Coverage Results" MODIFIED="1733550925951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_7" />
+    <SUITE FILE_PATH="coverage/2024$day_7.coverage" NAME="day_7 Coverage Results" MODIFIED="1733857883957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_7" />
     <SUITE FILE_PATH="coverage/2024$day_4.coverage" NAME="day_4 Coverage Results" MODIFIED="1733324465635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_4" />
     <SUITE FILE_PATH="coverage/2024$day_5.coverage" NAME="day_5 Coverage Results" MODIFIED="1733379603082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_5" />
+    <SUITE FILE_PATH="coverage/2024$day_9_valid.coverage" NAME="day_9_valid Coverage Results" MODIFIED="1733867972342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_9" />
   </component>
 </project>
