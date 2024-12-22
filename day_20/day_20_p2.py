@@ -29,7 +29,7 @@ distances = np.array(dijkstra(maze, start))
 valid_points = np.array(sorted(np.argwhere(distances != float('inf')), key=lambda x: distances[x[0]][x[1]]))
 times = {}
 for i in range(len(valid_points)):
-    for j in range(i+99, len(valid_points)):
+    for j in range(i+1, len(valid_points)):
         x1 = valid_points[i][0]
         x2 = valid_points[j][0]
         y1 = valid_points[i][1]
@@ -38,13 +38,14 @@ for i in range(len(valid_points)):
         dist_end = distances[x2][y2]
         manhattan_dist = manhattan(x1, y1, x2, y2)
         if manhattan_dist > 20: continue
-        elif dist_end - dist_start < 100: continue
+        elif dist_end - dist_start < 30: continue
 
         time_saved = int(dist_end - dist_start - manhattan_dist)
-        if time_saved < 100: continue
+        if time_saved < 30: continue
 
         if not time_saved in times:
             times[time_saved] = 1
         else:
             times[time_saved] += 1
+print(times)
 print(sum(times.values()))
